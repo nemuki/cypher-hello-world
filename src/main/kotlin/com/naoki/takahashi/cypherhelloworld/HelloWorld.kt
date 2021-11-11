@@ -1,5 +1,5 @@
 package com.naoki.takahashi.cypherhelloworld
 
-class HelloWorld(
+data class HelloWorld(
     val message: String
 )
