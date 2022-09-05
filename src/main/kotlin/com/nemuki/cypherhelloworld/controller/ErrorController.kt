@@ -12,8 +12,9 @@ import org.springframework.web.servlet.NoHandlerFoundException
 class ErrorController {
     @ExceptionHandler(NoHandlerFoundException::class)
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
-    fun errorRequest() = ErrorResponse("no handler found")
+    fun requestNotFoundError() = ErrorResponse("no handler found")
 
     @ExceptionHandler(Exception::class)
-    fun applicationException() = ResponseEntity(ErrorResponse("something wrong ;-("), HttpStatus.INTERNAL_SERVER_ERROR)
+    fun applicationExceptionError() =
+        ResponseEntity(ErrorResponse("something wrong ;-("), HttpStatus.INTERNAL_SERVER_ERROR)
 }
