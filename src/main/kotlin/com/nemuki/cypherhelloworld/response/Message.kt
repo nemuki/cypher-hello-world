@@ -1,4 +1,4 @@
-package com.nemuki.cypherhelloworld
+package com.nemuki.cypherhelloworld.response
 
 data class Message(
     val message: String
