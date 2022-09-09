@@ -1,4 +1,4 @@
-package com.nemuki.cypherhelloworld.controller
+package com.nemuki.cypherhelloworld.handler
 
 import com.nemuki.cypherhelloworld.response.ErrorResponse
 import org.springframework.http.HttpStatus
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice
 import org.springframework.web.servlet.NoHandlerFoundException
 
 @RestControllerAdvice
-class ErrorController {
+class ErrorHandler {
     @ExceptionHandler(NoHandlerFoundException::class)
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
     fun requestNotFoundError() = ErrorResponse("no handler found")
