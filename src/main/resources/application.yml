@@ -5,11 +5,10 @@ spring:
   web:
     resources:
       add-mappings: false
+text: "my best friend"
 ---
 # dev
 spring:
   config:
     activate:
       on-profile: dev
-    import:
-      - classpath:application-dev.yml
