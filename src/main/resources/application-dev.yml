@@ -2,5 +2,4 @@ text: "my friend"
 
 logging:
   level:
-    root: ERROR
     com.nemuki.cypherhelloworld: DEBUG
