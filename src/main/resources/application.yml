@@ -8,8 +8,7 @@ spring:
 text: "my best friend"
 logging:
   level:
-    root: WARN
-    com.nemuki.cypherhelloworld: TRACE
+    root: ERROR
 ---
 # dev
 spring:
