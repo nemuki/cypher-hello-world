@@ -5,7 +5,12 @@ spring:
   web:
     resources:
       add-mappings: false
+
 text: "my best friend"
+
+logging:
+  level:
+    root: ERROR
 ---
 # dev
 spring:
