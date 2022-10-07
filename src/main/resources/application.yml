@@ -9,7 +9,7 @@ text: "my best friend"
 logging:
   level:
     root: WARN
-    com.nemuki.cypherhelloworld.controller.HelloWorld: TRACE
+    com.nemuki.cypherhelloworld: TRACE
 ---
 # dev
 spring:
