@@ -18,9 +18,9 @@ class HelloWorld(
 ) {
 
     @GetMapping("/")
-    fun hello(@RequestParam(value = "name") @Size(min = 3, max = 10) name: String) {
+    fun hello(@RequestParam(value = "name") @Size(min = 3, max = 10) name: String): Message {
         logger.debug("request name = $name")
-        Message("Hello $text, $name")
+        return Message("Hello $text, $name")
     }
 
     companion object {
