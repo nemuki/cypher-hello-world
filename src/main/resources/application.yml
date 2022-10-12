@@ -5,6 +5,8 @@ spring:
   web:
     resources:
       add-mappings: false
+server:
+  shutdown: graceful
 
 text: "my best friend"
 
